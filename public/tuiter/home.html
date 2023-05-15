@@ -1,109 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Tuiter Assignment 1</title>
-  </head>
-  <body>
-    <a href="navigation.html">BACK</a>
-    <h1>Tuiter</h1>
-    <h2>Home</h2>
+</head>
 
-    <img src="../labs/a1/teslabot.jpeg" height="48px" width="48px" />
+<body>
+    <table>
+        <tbody>
+            <tr valign="top">
+                <td>
+                    <!-- header -->
+                
 
-    <form id="textarea">
-      
-      <textarea placeholder="What's happening?" cols="30" rows="5"></textarea>
-    </form>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td colspan="4">
+                    <!-- left sidebar
+                         -->
+                         <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="notifications.html">Notifications</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="bookmarks.html">Bookmarks</a></li>
+                    <li><a href="lists.html">Lists</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="tuit.html">Tuit</a></li>
+                    <li><a href="reply.html">Reply</a></li>
+                    </ul>
+                </td>
 
-    <select id="select-one-option">
-      <option selected value="EVERYONE">Everyone can reply</option>
-      <option value="FOLLOWING">People you follow</option>
-      <option value="MENTIONED">Only people you mentioned</option>
-    </select>
-    <hr />
+                <td>
+                    <!-- main content-->
+                    <!-- <h1>Home</h1> -->
+                    <!-- <a href="navigation.html">BACK</a> -->
+                    <h1>Tuiter</h1>
+                    <h2>Tuit</h2>
 
-    <input type="file" />
-    <button type="button">Tuit</button>
-    <hr />
-    <ul>
-      <li><a href="topic.html"> Topic 123</a></li>
-      <img src="../labs/a1/teslabot.jpeg" height="48px" width="48px" />
-      <a href="profile.html"> Sindhu</a>
-      @sindhu - 2h
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
-      <a href="reply.html"> Reply</a>
-      123
-      <a href="retuit.html"> Retuit</a>
-      234
-      <a href="like.html"> Like</a>
-      345
-      <a href="share.html"> Share</a>
-      @sindhu - 2h
-    </ul>
-    <ul>
-      <li><a href="topic.html"> Topic 345</a></li>
-      <img src="../labs/a1/teslabot.jpeg" height="48px" width="48px" />
-      <a href="profile.html"> Sahithi</a>
-      @sahithi - 4h
-      <p>
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English. Many desktop publishing packages and web
-        page editors now use Lorem Ipsum as their default model text, and a
-        search for 'lorem ipsum' will uncover many web sites still in their
-        infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose (injected humour and the like).
-      </p>
-      <a href="reply.html"> Reply</a>
-      234
-      <a href="retuit.html"> Retuit</a>
-      345
-      <a href="like.html"> Like</a>
-      456
-      <a href="share.html"> Share</a>
-      @sahithi - 4h
-    </ul>
-    <ul>
-      <li><a href="topic.html"> Topic 456</a></li>
-      <iframe width="48" height="48" src="https://www.youtube.com/embed/7CZTLogln34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <a href="profile.html"> Daniel</a>
-      @daniel - 4h
-      <p>
-        Praesent nunc lacus, sagittis interdum varius ut, blandit rhoncus urna.
-        Morbi vitae tempus libero. In hac habitasse platea dictumst. Nulla
-        maximus faucibus sem. Sed rhoncus commodo odio, eu ullamcorper erat
-        varius vel. Mauris dapibus felis magna, vitae placerat ligula laoreet
-        ac. Morbi et lobortis sapien. Maecenas eget suscipit sem. Donec tempor
-        tellus sem, eget condimentum massa vulputate id. Nulla velit arcu,
-        commodo vitae orci quis, ultricies convallis libero. Nam felis justo,
-        hendrerit eget facilisis in, semper eu tortor. Cras quis erat sit amet
-        est fermentum euismod. Mauris ultricies auctor pulvinar. Nam accumsan et
-        elit quis consectetur.
-      </p>
-      <a href="reply.html"> Reply</a>
-      789
-      <a href="retuit.html"> Retuit</a>
-      234
-      <a href="like.html"> Like</a>
-      233
-      <a href="share.html"> Share</a>
-      @daniel - 4h
-    </ul>
+                    <img src="../labs/a1/teslabot.jpeg" height="48px" width="48px" />
 
-   
+                    <form id="textarea">
+                        <!-- <label>Biography:</label><br /> -->
+                        <textarea placeholder="What's happening?" cols="30" rows="5"></textarea>
+                    </form>
 
-  </body>
+                    <select id="select-one-option">
+                        <option selected value="EVERYONE">Everyone can reply</option>
+                        <option value="FOLLOWING">People you follow</option>
+                        <option value="MENTIONED">Only people you mentioned</option>
+                    </select>
+                    <hr />
+
+                    <input type="file" />
+                    <button type="button">Tuit</button>
+                    <hr />
+                    <ul>
+                        <li><a href="topic.html"> Topic 123</a></li>
+                        <img src="../labs/a1/teslabot.jpeg" height="48px" width="48px" />
+                        <a href="profile.html"> Sindhu</a>
+                        @sindhu - 2h
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining
+                            essentially unchanged. It was popularised in the 1960s with the release
+                            of Letraset sheets containing Lorem Ipsum passages, and more recently
+                            with desktop publishing software like Aldus PageMaker including versions
+                            of Lorem Ipsum.
+                        </p>
+                        <a href="reply.html"> Reply</a>
+                        123
+                        <a href="retuit.html"> Retuit</a>
+                        234
+                        <a href="like.html"> Like</a>
+                        345
+                        <a href="share.html"> Share</a>
+                        @sindhu - 2h
+                    </ul>
+                    <ul>
+                        <li><a href="topic.html"> Topic 345</a></li>
+                        <img src="../labs/a1/teslabot.jpeg" height="48px" width="48px" />
+                        <a href="profile.html"> Sahithi</a>
+                        @sahithi - 4h
+                        <p>
+                            It is a long established fact that a reader will be distracted by the
+                            readable content of a page when looking at its layout. The point of
+                            using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters, as opposed to using 'Content here, content here', making it
+                            look like readable English. Many desktop publishing packages and web
+                            page editors now use Lorem Ipsum as their default model text, and a
+                            search for 'lorem ipsum' will uncover many web sites still in their
+                            infancy. Various versions have evolved over the years, sometimes by
+                            accident, sometimes on purpose (injected humour and the like).
+                        </p>
+                        <a href="reply.html"> Reply</a>
+                        234
+                        <a href="retuit.html"> Retuit</a>
+                        345
+                        <a href="like.html"> Like</a>
+                        456
+                        <a href="share.html"> Share</a>
+                        @sahithi - 4h
+                    </ul>
+                    <ul>
+                        <li><a href="topic.html"> Topic 456</a></li>
+                        <iframe width="48" height="48" src="https://www.youtube.com/embed/7CZTLogln34"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <a href="profile.html"> Daniel</a>
+                        @daniel - 4h
+                        <p>
+                            Praesent nunc lacus, sagittis interdum varius ut, blandit rhoncus urna.
+                            Morbi vitae tempus libero. In hac habitasse platea dictumst. Nulla
+                            maximus faucibus sem. Sed rhoncus commodo odio, eu ullamcorper erat
+                            varius vel. Mauris dapibus felis magna, vitae placerat ligula laoreet
+                            ac. Morbi et lobortis sapien. Maecenas eget suscipit sem. Donec tempor
+                            tellus sem, eget condimentum massa vulputate id. Nulla velit arcu,
+                            commodo vitae orci quis, ultricies convallis libero. Nam felis justo,
+                            hendrerit eget facilisis in, semper eu tortor. Cras quis erat sit amet
+                            est fermentum euismod. Mauris ultricies auctor pulvinar. Nam accumsan et
+                            elit quis consectetur.
+                        </p>
+                        <a href="reply.html"> Reply</a>
+                        789
+                        <a href="retuit.html"> Retuit</a>
+                        234
+                        <a href="like.html"> Like</a>
+                        233
+                        <a href="share.html"> Share</a>
+                        @daniel - 4h
+                    </ul>
+                </td>
+                <td>
+                    <!-- right
+         sidebar -->
+
+                </td>
+            </tr>
+            <tr valign="top">
+                <td colspan="3">
+                    <!-- footer -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
 </html>
