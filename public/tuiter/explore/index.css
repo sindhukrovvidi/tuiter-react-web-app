@@ -1,9 +1,21 @@
+.wd-explore-content {
+    display: flex;
+    justify-content: center;
+}
+
 .wd-search-bar {
     display: flex;
     align-items: center;
     background-color: lightgray;
     border-radius: 20px;
     padding: 5px;
+    width: 90%;
+}
+
+.wd-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .wd-icon {
@@ -102,6 +114,7 @@
 
 .wd-tuits-list ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .wd-header1 {
@@ -112,4 +125,36 @@
 }
 .wd-title {
     font-weight: 800;
+}
+
+.wd-tuit-display {
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 100%;
+}
+
+.wd-tuit-display ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.input-group-text {
+    background-color: white !important;
+    border: 0 !important;
+}
+.span-container span {
+    display: block;
+}
+
+.follow-button {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.left-nav-item a {
+    color: black !important;
+    text-decoration: none !important;
 }

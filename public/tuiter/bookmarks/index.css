@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wd-bookmark {
+    /* border: solid rgb(47, 51, 54) 1px; */
+    margin: 15px;
+}
+
+.wd-main-heading {
+    margin-left: 16px;
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.wd-user-name {
+    margin-left: 16px;
+    color: lightgray;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.wd-head {
+    border-bottom: solid rgb(47, 51, 54) 1px;
+}
+
+.wd-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-user-image {
+    margin-left: 16px;
+    margin-top: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.wd-tuit {
+    margin-top: 12px;
+    padding-left: 12px;
+    padding-right: 16px;
+    max-width: 506px;
+}
+
+.wd-name-uname-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-uname {
+    font-size: 15px;
+    padding: 0 2px 0 2px;
+    color: lightgray;
+}
+
+.wd-date {
+    font-size: 15px;
+    padding: 0 2px 0 2px;
+    color: lightgray;
+}
+
+.wd-content {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.wd-post-pic {
+    width:504px;
+    height: 264px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 12px;
+}
+
+.wd-img-heading {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+.wd-img-text {
+    color: lightgray;
+}
+
+.wd-img-and-content {
+    border: solid rgb(47, 51, 54) 1px;
+    border-radius: 30px;
+}
+
+.wd-img-content {
+    padding: 12px;
+}
+
+.wd-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px;
+    color: lightgray;
+}
+
+.wd-icons a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.wd-icons i {
+    padding-right: 12px;
+}
+
+.wd-red i {
+    color: red;
+}
+
+.wd-red span {
+    color: red;
+}
+
+.wd-img-link {
+    color: lightgray;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 0 0 0;
+}
+
+.wd-img-link i {
+    padding-right: 6px;
+}
