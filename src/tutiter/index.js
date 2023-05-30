@@ -7,18 +7,17 @@ import BookmarksScreen from "./bookmarks-screen";
 import ProfileScreen from "./profile-screen";
 // import WhoToFollowListItem from "./who-to-follow-list-item";
 import WhoToFollowList from "./who-to-follow-list";
-import ExploreScreen from "./explore-screen/index"
-
+import ExploreScreen from "./explore-screen/index";
 
 function Tuiter() {
   return (
-    <div>
+    <div className="container">
       <Nav />
       <div className="row">
         <div className="col-2">
           <NavigationSidebar />
         </div>
-        <div className="col-7">
+        <div className="d-block col-10 col-sm-10 col-lg-6 col-xl-6 wd-float-left mt-2 wd px-2">
           <Routes>
             <Route path="/home" element={<HomeScreen />} />
             <Route path="/explore" element={<ExploreScreen />} />
@@ -30,7 +29,7 @@ function Tuiter() {
             <Route path="/more" element={<h1>More</h1>} />
           </Routes>
         </div>
-        <div className="col-3">
+        <div className="d-none d-lg-block col-lg-5 col-xl-4 my-2 wd-dark-mode p-0 ps-2">
           <WhoToFollowList />
         </div>
       </div>
