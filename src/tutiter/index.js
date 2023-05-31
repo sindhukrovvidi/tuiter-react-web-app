@@ -29,7 +29,7 @@ function Tuiter() {
             <Route path="/more" element={<h1>More</h1>} />
           </Routes>
         </div>
-        <div className="d-none d-lg-block col-lg-5 col-xl-4 my-2 wd-dark-mode p-0 ps-2">
+        <div className="d-none d-lg-block col-lg-5 col-xl-4 my-2 p-0 ps-2">
           <WhoToFollowList />
         </div>
       </div>
