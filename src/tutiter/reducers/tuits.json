@@ -1,0 +1,45 @@
+[
+    {
+      "_id": 123,
+      "topic": "Space",
+      "userName": "SpaceX",
+      "title": "Watch SpaceX launch Dragon cargo mission to space station Monday after 2-day delay",
+      "time": "2h",
+      "image": "space.jpeg",
+      "liked": true,
+      "replies": 123,
+      "retuits": 432,
+      "likes": 2345,
+      "handle": "@spacex",
+      "tuit": "A SpaceX Falcon 9 rocket is now scheduled to launch a robotic Dragon cargo capsule toward the orbiting lab Monday at 11:47 a.m. EDT (1547 GMT) from NASA's Kennedy Space Center in Florida. The launch was originally scheduled for Saturday (June 3), but SpaceX announced a 24-hour delay in the wee hours, citing the need to allow more time for vehicle preparations and for weather conditions to improve."
+    },
+    {
+      "_id": 234,
+      "topic": "Space",
+      "userName": "SpaceX",
+      "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+      "time": "2h",
+      "image": "space_1.avif",
+      "liked": true,
+      "replies": 123,
+      "retuits": 432,
+      "likes": 2345,
+      "handle": "@spacex",
+      "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+    },
+    {
+      "_id": 345,
+      "topic": "Tesla",
+      "userName": "Tesla",
+      "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+      "time": "4d",
+      "image": "Tesla_logo.png",
+      "liked": false,
+      "replies": 123,
+      "retuits": 432,
+      "likes": 2345,
+      "handle": "@spacex",
+      "tuit": "Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency. New module and pack thermal architecture allows for faster charging and gives you more power and endurance in all conditions."
+    }
+  ]
+  
