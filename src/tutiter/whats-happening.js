@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { createTuit } from "./reducers/tuits-reducer";
 import { useDispatch } from "react-redux";
-import {
-  faImage,
-  faChartSimple,
-  faFaceSmile,
-  faLocationDot,
-  faFile,
-} from "@fortawesome/free-solid-svg-icons";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {
+  AiOutlineBarChart,
+  AiOutlineFileGif,
+  AiOutlinePicture,
+} from "react-icons/ai";
+import { BsEmojiSmile } from "react-icons/bs";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState("");
@@ -43,22 +42,21 @@ const WhatsHappening = () => {
           onChange={(event) => setWhatsHappening(event.target.value)}
         ></textarea>
         <div>
-          <ToastContainer />
-          <div className="d-flex justify-content-between mt-2 ps-3 pe-3 text-primary">
-            <FontAwesomeIcon icon={faImage} />
-            <FontAwesomeIcon icon={faFile} />
-            <FontAwesomeIcon icon={faChartSimple} />
-            <FontAwesomeIcon icon={faFaceSmile} />
-            <FontAwesomeIcon icon={faLocationDot} />
-
-            <button
-              className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold"
-              onClick={tuitClickHandler}
-            >
-              Tuit
-            </button>
+          <button
+            className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold"
+            onClick={tuitClickHandler}
+          >
+            Tuit
+          </button>
+          <div className="text-primary fs-2">
+            <AiOutlinePicture className="me-3" />
+            <AiOutlineFileGif className="me-3" />
+            <AiOutlineBarChart className="me-3" />
+            <BsEmojiSmile className="me-3" />
+            <HiOutlineLocationMarker className="me-3" />
           </div>
         </div>
+        <ToastContainer />
       </div>
       <div className="col-12">
         <hr />

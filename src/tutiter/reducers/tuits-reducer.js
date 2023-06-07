@@ -34,8 +34,13 @@ const tuitsSlice = createSlice({
           tuit._id === action.payload);
     state.tuits.splice(index, 1);
   },
+  updateTuit(state, action) {
+    const currTuit = state.tuits.findIndex(tuit => tuit._id === action.payload._id)
+    state.tuits[currTuit].liked = action.payload.liked
+    state.tuits[currTuit].likes = action.payload.likes
+  }
  }
 });
 
-export const {createTuit, deleteTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit, updateTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
