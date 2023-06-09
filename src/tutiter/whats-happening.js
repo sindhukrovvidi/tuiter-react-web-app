@@ -10,6 +10,8 @@ import {
 } from "react-icons/ai";
 import { BsEmojiSmile } from "react-icons/bs";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import {createTuitThunk} from "./services/tuits-thunks";
+
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState("");
@@ -24,7 +26,7 @@ const WhatsHappening = () => {
       const newTuit = {
         tuit: whatsHappening,
       };
-      dispatch(createTuit(newTuit));
+      dispatch(createTuitThunk(newTuit));
       setWhatsHappening("");
     }
   };

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TuitStatus from "../tuit-status/tuit-status";
 import { useDispatch } from "react-redux";
 import { deleteTuit } from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 
 const TuitListItem = ({
   tuit = {
@@ -17,7 +18,7 @@ const TuitListItem = ({
 }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
   return (
     <li className="list-group-item">
@@ -26,7 +27,7 @@ const TuitListItem = ({
           <img
             width={"100%"}
             className="rounded-3"
-            src={require(`../assets/${tuit.image}`)}
+            src={tuit.image && require(`../assets/${tuit.image}`)}
             alt=""
           />
         </div>
