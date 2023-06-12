@@ -6,7 +6,7 @@ import {
   faReply,
   faThumbsDown,
 } from "@fortawesome/free-solid-svg-icons";
-import { updateTuit } from "../reducers/tuits-reducer";
+// import { updateTuit } from "../reducers/tuits-reducer";
 import { useDispatch } from "react-redux";
 import { updateTuitThunk } from "../services/tuits-thunks";
 
@@ -23,17 +23,18 @@ const TuitStatus = ({
   },
 }) => {
   const dispatch = useDispatch();
-  const updateLikes = (id) => {
-    const newTuit = { ...tuit };
-    if (tuit.liked) {
-      newTuit.liked = false;
-      newTuit.likes = newTuit.likes - 1;
-    } else {
-      newTuit.liked = true;
-      newTuit.likes = newTuit.likes + 1;
-    }
-    dispatch(updateTuitThunk(newTuit));
-  };
+
+  // const updateLikes = (id) => {
+  //   const newTuit = { ...tuit };
+  //   if (tuit.liked) {
+  //     newTuit.liked = false;
+  //     newTuit.likes = newTuit.likes - 1;
+  //   } else {
+  //     newTuit.liked = true;
+  //     newTuit.likes = newTuit.likes + 1;
+  //   }
+  //   dispatch(updateTuitThunk(newTuit));
+  // };
 
   return (
     <div className="row mt-4">
