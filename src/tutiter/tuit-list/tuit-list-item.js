@@ -3,7 +3,7 @@ import { faCircleCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TuitStatus from "../tuit-status/tuit-status";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
+// import { deleteTuit } from "../reducers/tuits-reducer";
 import {deleteTuitThunk} from "../services/tuits-thunks";
 
 const TuitListItem = ({
@@ -23,15 +23,15 @@ const TuitListItem = ({
   return (
     <li className="list-group-item">
       <div className="row">
-        <div className="col-3">
+        <div className="col-2">
           <img
-            width={"100%"}
-            className="rounded-3"
+            style={{height: "60px", width: "60px"}}
+            className="rounded-circle"
             src={tuit.image && require(`../assets/${tuit.image}`)}
             alt=""
           />
         </div>
-        <div className="col-9">
+        <div className="col-10">
           <div>
             <FontAwesomeIcon
               className="float-end"

@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 const TuitSummaryItem = ({
   tuit = {
@@ -15,10 +17,11 @@ const TuitSummaryItem = ({
       <div className="row">
         <div className="col-10">
           <div>
-            {tuit.userName} . {tuit.time}
+          <span className="fw-bolder">{tuit.topic}</span>{" "}
+            <FontAwesomeIcon icon={faCircleCheck} /> {tuit.handle} . {tuit.time}
           </div>
           <div className="fw-bolder">{tuit.topic}</div>
-          <div>{tuit.title}</div>
+          <div>{tuit.tuit}</div>
         </div>
         <div className="col-2">
           <img
