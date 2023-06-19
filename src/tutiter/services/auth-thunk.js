@@ -10,7 +10,9 @@ export const loginThunk = createAsyncThunk(
 );
 
 export const profileThunk = createAsyncThunk("auth/profile", async () => {
-  return await authService.profile();
+  // return await authService.profile();
+  const response = await authService.profile();
+  return response.data;
 });
 
 export const logoutThunk = createAsyncThunk("auth/logout", async () => {

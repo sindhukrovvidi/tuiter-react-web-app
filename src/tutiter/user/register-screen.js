@@ -17,8 +17,7 @@ function RegisterScreen() {
           username,
           password,
           firstName,
-          lastName,
-          _id: new Date().getTime(),
+          lastName
         })
       );
       navigate("/tuiter/profile");

@@ -24,17 +24,29 @@ const TuitStatus = ({
 }) => {
   const dispatch = useDispatch();
 
-  // const updateLikes = (id) => {
-  //   const newTuit = { ...tuit };
-  //   if (tuit.liked) {
-  //     newTuit.liked = false;
-  //     newTuit.likes = newTuit.likes - 1;
-  //   } else {
-  //     newTuit.liked = true;
-  //     newTuit.likes = newTuit.likes + 1;
-  //   }
-  //   dispatch(updateTuitThunk(newTuit));
-  // };
+  const updateLikes = () => {
+    const newTuit = { ...tuit };
+    if (tuit.liked) {
+      newTuit.liked = false;
+      newTuit.likes = newTuit.likes - 1;
+    } else {
+      newTuit.liked = true;
+      newTuit.likes = newTuit.likes + 1;
+    }
+    dispatch(updateTuitThunk(newTuit));
+  };
+
+  const updateDislikes = () => {
+    const newTuit = { ...tuit };
+    if (tuit.disliked) {
+      newTuit.disliked = false;
+      newTuit.dislikes = newTuit.dislikes - 1;
+    } else {
+      newTuit.disliked = true;
+      newTuit.dislikes = newTuit.dislikes + 1;
+    }
+    dispatch(updateTuitThunk(newTuit));
+  };
 
   return (
     <div className="row mt-4">
@@ -52,10 +64,10 @@ const TuitStatus = ({
           <FontAwesomeIcon
             style={{ color: tuit.liked ? "red" : "gray" }}
             icon={faHeart}
-            onClick={() =>
-              dispatch(
-                updateTuitThunk({ ...tuit, likes: tuit.likes + 1, liked: true })
-              )
+            onClick={() => updateLikes()
+              // dispatch(
+              //   updateTuitThunk({ ...tuit, likes: tuit.likes + 1, liked: true })
+              // )
             }
           />{" "}
           {tuit.likes}{" "}
@@ -63,10 +75,10 @@ const TuitStatus = ({
         <span>
           <FontAwesomeIcon
             icon={faThumbsDown}
-            onClick={() =>
-              dispatch(
-                updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 })
-              )
+            onClick={() => updateDislikes()
+              // dispatch(
+              //   updateTuitThunk({ ...tuit, dislikes: (tuit.dislikes || 0) + 1 })
+              // )
             }
           />
           {tuit.dislikes}{" "}

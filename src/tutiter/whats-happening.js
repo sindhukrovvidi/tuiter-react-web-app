@@ -31,6 +31,8 @@ const WhatsHappening = () => {
         title: "random Stuff",
         liked: false,
         likes: 0,
+        disliked: false,
+        dislikes: 0,
         replies: 0,
         retuits: 0,
         tuit: whatsHappening,
